@@ -97,10 +97,12 @@ table {
 }
 
 body {
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 body header {
+  z-index: 100;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -140,16 +142,36 @@ body header #searchInput {
   width: 0rem;
 }
 body article {
-  padding-top: 4rem;
+  background-color: lavender;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+body article nav {
+  position: sticky;
+  left: 0rem;
+  top: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-color: lavender;
+  height: 100%;
+  width: 20rem;
+  z-index: 5;
+  background-color: rgb(62, 62, 82);
 }
-body article #profilePicture {
+body article nav #profilePicture {
+  padding-top: 1rem;
   border-radius: 100%;
   width: 15vw;
   height: auto;
+}
+body article nav .navNavigationCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+body article nav .navNavigationCont .navNavigation {
+  color: white;
+  font-size: 250%;
 }/*# sourceMappingURL=main.css.map */

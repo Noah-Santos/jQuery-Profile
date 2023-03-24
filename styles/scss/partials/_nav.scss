@@ -1,9 +1,11 @@
 @import "./mixin";
 
 body{
+    height: 100vh;
     @include flex(column);
 
     header {
+        z-index: 100;
         @include flex(row);
         justify-content: center;
         align-items: center;
@@ -48,17 +50,37 @@ body{
     }
 
     article{
-        padding-top: 4rem;
-        @include flex(column);
-        align-items: center;
-        height: 100vh;
-        width: 100%;
         background-color: lavender;
+        height: 100%;
+        @include flex(row);
+        
+        nav {
+            position: sticky;
+            left: 0rem; top: 0rem;
+            @include flex(column);
+            align-items: center;
+            height: 100%;
+            width: 20rem;
+            z-index: 5;
+            background-color: rgb(62, 62, 82);
+    
+            #profilePicture {
+                padding-top: 1rem;
+                border-radius: 100%;
+                width: 15vw;
+                height: auto;
+            }
 
-        #profilePicture{
-            border-radius: 100%;
-            width: 15vw;
-            height: auto;
+            .navNavigationCont{
+                @include flex(column);
+                justify-content: space-evenly;
+                height: 100%;
+
+                .navNavigation{
+                    color: white;
+                    font-size: 250%;
+                }
+            }
         }
     }
 }
