@@ -1,1 +1,6 @@
-@import "./partials/reset", "./partials/nav";
+@import "./partials/reset", "./partials/nav", "./partials/header";
+
+body{
+    height: 100vh;
+    @include flex(column);
+}
