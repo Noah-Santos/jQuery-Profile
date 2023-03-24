@@ -94,4 +94,50 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  background-color: rgb(50, 50, 62);
+  position: sticky;
+  top: 0;
+}
+body header .headContent {
+  display: flex;
+  flex-direction: row;
+  align-content: space-evenly;
+}
+body header #profileName {
+  font-size: 250%;
+  color: white;
+}
+body header #backArrow {
+  position: fixed;
+  left: 1rem;
+  filter: invert(1);
+  height: 5%;
+}
+body header #logOut {
+  position: fixed;
+  right: 1rem;
+  font-size: 150%;
+  color: white;
+}
+body article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: lavender;
+}
+body article #profilePicture {
+  border-radius: 100%;
+  width: 15vw;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
