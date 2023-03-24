@@ -28,9 +28,11 @@ $(function(){
         $("#" + temp).css("background-color","rgb(44, 44, 58)");
         // eigth method
         $("#" + temp).mouseout(function(){
-            let arr = $(this).attr("class");
+            let arr = $("#" + temp).attr("class");
+            let classes = arr.split(" ");
+            console.log(classes[1])
             // changes background color to normal unless it is active class
-            if(arr.length > 1){
+            if($(classes)[1] == "active"){
                 $(this).css("background-color","rgb(44, 44, 58)");
             }else{
                 $(this).css("background-color","rgb(62, 62, 82)");
@@ -40,13 +42,13 @@ $(function(){
 
     // ninth method
     // when you click a nav section, it will change background color and change content displayed
-    $(".navNavigation").on("click",function(){
-        // tenth method
+    $(".navNavigationCont").on("click",function(){
+        // tenth and eleventh method
         // gets rid of active class on currently active element
-        $(".active").removeClass("active");
+        $(this).children().removeClass("active");
         // var to hold id of current hovered element
         var clicked = $(this).attr("id");
-        // eleventh method
+        // twelfth method
         // adds active class to currently clicked section
         $("#" + clicked).addClass("active");
     });
