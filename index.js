@@ -48,7 +48,7 @@ $(function(){
         var clicked = $(this).attr("id");
         // eleventh method
         // adds active class to currently clicked section
-        $(clicked).addClass("active");
+        $("#" + clicked).addClass("active");
     });
 
     // when hover over logout button
