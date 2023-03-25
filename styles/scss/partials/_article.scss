@@ -62,17 +62,29 @@ body{
                 display: none;
                 align-content: space-around;
                 justify-content: space-around;
+                text-align: center;
                 width: 100%;
                 height: 100%;
-
+                
                 // edits the sections that hold text
                 p{
                     padding: {
                         top: 2rem;
                         bottom: 2rem;
+                        left: 7rem;
+                        right: 7rem;
                     }
                     text-align: center;
-                    font-size: 150%
+                    font-size: 150%;
+
+                    // title for the vacation sotry
+                    #title {
+                        font-size: 250%;
+                        font-weight: bold;
+                        border-radius: 50px;
+                        padding: 1rem;
+                        color: lavender;
+                    }
                 }
             }
 

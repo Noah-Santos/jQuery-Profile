@@ -56,5 +56,11 @@ $(function(){
         // fades it out on click and waits 2 seconds before fade in
         $(this).fadeOut(300).delay(2000).fadeIn(300);
     });
+
+    // when click over back arrow
+    $("#backArrow").click(function(){
+        // fades it out on click and waits 2 seconds before fade in
+        $(this).fadeOut(300).delay(2000).fadeIn(300);
+    });
     
 });

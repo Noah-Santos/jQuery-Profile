@@ -59,6 +59,47 @@ summary {
   vertical-align: baseline;
 }
 
+body header {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(50, 50, 62);
+  position: sticky;
+  top: 0;
+}
+body header #profileName {
+  font-size: 250%;
+  color: white;
+  padding-right: 1.5rem;
+}
+body header #backArrow {
+  position: fixed;
+  left: 3rem;
+  filter: invert(1);
+  height: 5%;
+}
+body header #logOut {
+  position: fixed;
+  right: 3rem;
+  font-size: 150%;
+  color: white;
+}
+body header #search {
+  filter: invert(1);
+  height: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.75rem;
+}
+body header #searchInput {
+  height: 0rem;
+  display: none;
+  width: 0rem;
+}
+
 body article {
   background-color: lavender;
   height: 100%;
@@ -109,59 +150,28 @@ body article .content .section {
   display: none;
   align-content: space-around;
   justify-content: space-around;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
 body article .content .section p {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 7rem;
+  padding-right: 7rem;
   text-align: center;
   font-size: 150%;
+}
+body article .content .section p #title {
+  font-size: 250%;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 1rem;
+  color: lavender;
 }
 body article .content .activeSect {
   display: flex;
   flex-direction: column;
-}
-
-body header {
-  z-index: 100;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 4rem;
-  background-color: rgb(50, 50, 62);
-  position: sticky;
-  top: 0;
-}
-body header #profileName {
-  font-size: 250%;
-  color: white;
-  padding-right: 1.5rem;
-}
-body header #backArrow {
-  position: fixed;
-  left: 3rem;
-  filter: invert(1);
-  height: 5%;
-}
-body header #logOut {
-  position: fixed;
-  right: 3rem;
-  font-size: 150%;
-  color: white;
-}
-body header #search {
-  filter: invert(1);
-  height: 2.5rem;
-  padding-left: 1.5rem;
-  padding-right: 0.75rem;
-}
-body header #searchInput {
-  height: 0rem;
-  display: none;
-  width: 0rem;
 }
 
 body {
