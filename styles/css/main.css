@@ -102,6 +102,26 @@ body article nav .navNavigationCont .navNavigation {
 body article nav .navNavigationCont .active {
   background-color: rgb(50, 50, 62);
 }
+body article .content {
+  width: 100%;
+}
+body article .content .section {
+  display: none;
+  align-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+body article .content .section p {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 150%;
+}
+body article .content .activeSect {
+  display: flex;
+  flex-direction: column;
+}
 
 body header {
   z-index: 100;
