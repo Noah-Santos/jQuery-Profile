@@ -1,6 +1,7 @@
 @import "./partials/reset", "./partials/nav", "./partials/header";
 
+// sets body to be whole page and column flex
 body{
-    height: 100vh;
+    height: 100%;
     @include flex(column);
 }

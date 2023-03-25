@@ -1,6 +1,7 @@
 @import "./mixin";
 
 body {
+    // sets the header to be the whole screen width and at the top
     header {
         z-index: 100;
         @include flex(row);
@@ -12,12 +13,14 @@ body {
         position: sticky;
         top: 0;
 
+        // modifies the account name
         #profileName {
             font-size: 250%;
             color: white;
             padding-right: 1.5rem;
         }
 
+        // modifes arrow to go back to main page
         #backArrow {
             position: fixed;
             left: 3rem;
@@ -25,6 +28,7 @@ body {
             height: 5%
         }
 
+        // button to sign out of account
         #logOut {
             position: fixed;
             right: 3rem;
@@ -32,6 +36,7 @@ body {
             color: white;
         }
 
+        // modifies the search icon
         #search {
             filter: invert(1);
             height: 2.5rem;
@@ -41,6 +46,7 @@ body {
             }
         }
 
+        // modifies the input tag and hides until icon is clicked
         #searchInput {
             height: 0rem;
             display: none;

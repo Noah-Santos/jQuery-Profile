@@ -25,14 +25,14 @@ $(function(){
         var temp = $(this).attr("id");
         // seventh method
         // changes the background color to slightly darker
-        $("#" + temp).css("background-color","rgb(44, 44, 58)");
+        $("#" + temp).css("background-color","rgb(50, 50, 62)");
         // eigth method
         $("#" + temp).mouseout(function(){
             let arr = $("#" + temp).attr("class");
             let classes = arr.split(" ");
             // changes background color to normal unless it is active class
             if($(classes)[1] == "active"){
-                $(this).css("background-color","rgb(44, 44, 58)");
+                $(this).css("background-color","rgb(50, 50, 62)");
             }else{
                 $(this).css("background-color","rgb(62, 62, 82)");
             }
@@ -41,15 +41,14 @@ $(function(){
 
     // ninth method
     // when you click a nav section, it will change background color and change content displayed
-    $(".navNavigation").on("click",function(){
-        // tenth  method
-        // gets rid of active class on all span tags
+    $("span.navNavigation").on("click",function(){
+        // tenth and eleventh method  
+        // gets rid of active class on all span tags and resets color to normal except on the one clicked
         $("span").removeClass("active");
-        // var to hold id of current hovered element
-        var clicked = $(this).attr("id");
+        $("span").not(this).css("background-color","rgb(62, 62, 82)");
         // twelfth method
         // adds active class to currently clicked section
-        $("#" + clicked).addClass("active");
+        $(this).addClass("active");
     });
 
     // when hover over logout button
@@ -58,4 +57,4 @@ $(function(){
     });
 
     
-})
+});

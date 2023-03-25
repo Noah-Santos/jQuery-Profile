@@ -1,11 +1,13 @@
 @import "./mixin";
 
 body{
+    // edits the section under the header
     article{
         background-color: lavender;
         height: 100%;
         @include flex(row);
         
+        // side nav to make it stay there
         nav {
             position: sticky;
             left: 0rem; top: 0rem;
@@ -16,6 +18,7 @@ body{
             z-index: 5;
             background-color: rgb(62, 62, 82);
     
+            // contains my profile picture
             #profilePicture {
                 padding-top: 1rem;
                 border-radius: 100%;
@@ -23,17 +26,19 @@ body{
                 height: auto;
             }
 
+            // container of the buttons on the side
             .navNavigationCont{
                 @include flex(column);
                 justify-content: space-evenly;
                 height: 100%;
                 text-align: center;
-                background-color: rgb(62, 62, 82);
 
+                // modifies the span tags that hold the different section names
                 .navNavigation{
                     color: white;
                     font-size: 250%;
                     text-align: center;
+                    background-color: rgb(62, 62, 82);
                     padding: {
                         left: 1rem;
                         right: 1rem;
@@ -41,8 +46,9 @@ body{
                     border-radius: 30px;
                 }
 
+                // class that shows which tab is active by showing darker color
                 .active{
-                    background-color: rgb(44, 44, 58);
+                    background-color: rgb(50, 50, 62);
                 }
             }
         }
