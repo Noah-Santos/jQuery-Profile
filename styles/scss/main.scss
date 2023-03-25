@@ -2,6 +2,6 @@
 
 // sets body to be whole page and column flex
 body{
-    height: 100%;
+    height: 100vh;
     @include flex(column);
 }

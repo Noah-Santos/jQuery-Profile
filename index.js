@@ -51,10 +51,11 @@ $(function(){
         $(this).addClass("active");
     });
 
-    // when hover over logout button
-    $("#logOut").hover(function(){
-        // $(this).flip(300);
+    // when click over logout button
+    $("#logOut").click(function(){
+        // thirteenth, fourteenth, and fifteenth method
+        // fades it out on click and waits 2 seconds before fade in
+        $(this).fadeOut(300).delay(2000).fadeIn(300);
     });
-
     
 });
